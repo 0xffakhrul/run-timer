@@ -7,7 +7,7 @@ export const Timer = () => {
   const [phase, setPhase] = useState<WorkoutPhase>("warmup");
   const [setCount, setSetCount] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
-  const [isCompleted, setIsCompleted] = useState(false);
+  // const [isCompleted, setIsCompleted] = useState(false);
 
   function getTotalTime(phase: WorkoutPhase): number {
     switch (phase) {
