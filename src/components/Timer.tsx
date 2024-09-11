@@ -20,9 +20,9 @@ export const Timer = () => {
   }
 
   useEffect(() => {
-    let timer: NodeJS.Timeout;
+    let timer: number;
     if (isRunning) {
-      timer = setInterval(() => {
+      timer = window.setInterval(() => {
         setTime((prevTime) => {
           if (prevTime > 0) return prevTime - 1;
 
